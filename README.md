@@ -14,7 +14,7 @@ In this article, we revisit two industry standard algorithms for interpretabilit
 ![lime results](docs/images/limeresults.png)
 ![shap results](docs/images/kernelshap.png)
 
-#### Figure shows the local explanations created with LIME and SHAP for a given test data instance across 6 models. We see agreement in magnitude and direction across all models for both explanation methods (except for the Decision Tree).
+##### Figure shows the local explanations created with LIME and SHAP for a given test data instance across 6 models. We see agreement in magnitude and direction across all models for both explanation methods (except for the Decision Tree).
 
 ## LIME vs SHAP : When to use what?
 
