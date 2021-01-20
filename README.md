@@ -1,6 +1,6 @@
-# Notebook with examples in explaining models with LIME and SHAP
+# [Notebook] Explaining Models with LIME and SHAP
 
-> We provide a [notebook](explainability.ipynb) with examples in explaining 6 models (Naive Bayes, Logistic Regression, Decision Tree, Random Forest, Gradient Boosted, Tree Multilayer Perceptron) with LIME and SHAP.
+> This repository provides a [notebook](explainability.ipynb) with examples in explaining 6 models (Naive Bayes, Logistic Regression, Decision Tree, Random Forest, Gradient Boosted, Tree Multilayer Perceptron) using LIME and SHAP.
 
 At [Cloudera Fast Forward](https://www.cloudera.com/products/fast-forward-labs-research.html), we see model interpretability as an important step in the data science workflow. Being able to explain how a model works serves many purposes, including building trust in the model's output, satisfying regulatory requirements, model debugging, and verifying model safety, amongst other things. We have written a research report (access it free here) that discusses this topic in detail.
 In this article, we revisit two industry standard algorithms for interpretability - LIME and SHAP. We discuss how these two algorithms work, and show some code examples of how to implement them in python. At the end of this [notebook](explainability.ipynb), you should be familiar with:
