@@ -18,14 +18,14 @@ In this article, we revisit two industry standard algorithms for interpretabilit
 ##### Figure 1. Plots of UMAP and PCA dimensionality reduction (two dimensions) applied to the dataset. 
 
 ![lime results](docs/images/limeresults.png)
-##### Figure 1. Local explanations created with LIME for a given test data instance across 6 models.  
+##### Figure 2. Local explanations created with LIME for a given test data instance across 6 models.  
 
 
 ![shap results](docs/images/kernelshap.png)
-##### Figure 2. Local explanations created with SHAP Kernel Explainer for a given test data instance across 6 models.
+##### Figure 3. Local explanations created with SHAP Kernel Explainer for a given test data instance across 6 models.
 
 
-The figures above show the local explanations created with LIME and SHAP for a given test data instance across 6 models. We see agreement in magnitude and direction across all models for both explanation methods (except for the Decision Tree).
+Figure 2 and 3 above show the local explanations created with LIME and SHAP for a given test data instance across 6 models. We see agreement in magnitude and direction across all models for both explanation methods (except for the Decision Tree).
 
 ## LIME vs SHAP : When to Use What?
 
