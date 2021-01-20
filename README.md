@@ -13,6 +13,10 @@ In this article, we revisit two industry standard algorithms for interpretabilit
 - Good practices for "debugging" LIME and SHAP explanations
 - Limitations of LIME/SHAP (a.k.a., when to choose LIME over SHAP)
 
+
+![exploration](docs/images/exploration.png)
+##### Figure 1. Plots of UMAP and PCA dimensionality reduction (two dimensions) applied to the dataset. 
+
 ![lime results](docs/images/limeresults.png)
 ##### Figure 1. Local explanations created with LIME for a given test data instance across 6 models.  
 
