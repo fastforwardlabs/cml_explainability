@@ -1,10 +1,10 @@
 # [Notebook] Explaining Models with LIME and SHAP
 
-> This repository provides a [notebook](explainability.ipynb) with examples in explaining 6 models (Naive Bayes, Logistic Regression, Decision Tree, Random Forest, Gradient Boosted, Tree Multilayer Perceptron) using LIME and SHAP.
+> This repository provides a [notebook](explainability.ipynb) with examples in explaining 6 models (Naive Bayes, Logistic Regression, Decision Tree, Random Forest, Gradient Boosted Tree, Multilayer Perceptron) using LIME and SHAP.
 
 ![lime results](docs/images/limeshap.png)
 
-At [Cloudera Fast Forward](https://www.cloudera.com/products/fast-forward-labs-research.html), we see model interpretability as an important step in the data science workflow. Being able to explain how a model works serves many purposes, including building trust in the model's output, satisfying regulatory requirements, model  debugging, and verifying model safety, amongst other things. We have written a research report (access it free here) that discusses this topic in detail.
+At [Cloudera Fast Forward](https://www.cloudera.com/products/fast-forward-labs-research.html), we see model interpretability as an important step in the data science workflow. Being able to explain how a model works serves many purposes, including building trust in the model's output, satisfying regulatory requirements, model  debugging, and verifying model safety, amongst other things. We have written a research report (access it free [here](https://ff06-2020.fastforwardlabs.com/)) that discusses this topic in detail.
 In this article, we revisit two industry standard algorithms for interpretability - LIME and SHAP. We discuss how these two algorithms work, and show some code examples of how to implement them in python. At the end of this [notebook](explainability.ipynb), you should be familiar with:
 
 - An overview of model interpretability
@@ -14,11 +14,11 @@ In this article, we revisit two industry standard algorithms for interpretabilit
 - Limitations of LIME/SHAP (a.k.a., when to choose LIME over SHAP)
 
 ![lime results](docs/images/limeresults.png)
-##### Local explanations created with LIME for a given test data instance across 6 models.  
+##### Figure 1. Local explanations created with LIME for a given test data instance across 6 models.  
 
 
 ![shap results](docs/images/kernelshap.png)
-##### Local explanations created with LIME for a given test data instance across 6 models.
+##### Figure 2. Local explanations created with SHAP Kernel Explainer for a given test data instance across 6 models.
 
 
 The figures above show the local explanations created with LIME and SHAP for a given test data instance across 6 models. We see agreement in magnitude and direction across all models for both explanation methods (except for the Decision Tree).
@@ -29,7 +29,7 @@ LIME and SHAP are both good methods for explaining models. In theory, SHAP is th
 
 Some additional limitations of both methods are mentioned below:
 
-- LIME is not designed to work with one hot encoded data. Considering that each data point is perturbed to create the approximate model, perturbing a one hot encoded variable may result in unexpected (meaningless) features. See discussion [here](https://github.com/marcotcr/lime/issues/153)
+- LIME is not designed to work with one hot encoded data. Considering that each data point is perturbed to create the approximate model, perturbing a one hot encoded variable may result in unexpected (meaningless) features. See discussion [here](https://github.com/marcotcr/lime/issues/153).
 - LIME depends on the ability to perturb samples in meaningful ways. This perturbation is use case specific. E.g., for tabular data, this entails adding random noise to each feature; for images, this entails replacing superpixels within the image with some mean value or zeroes; for text, this entails removing words from the text. It is often useful to think through any side effects of these perturbation strategies with respect to your data to further build trust in the explanation.
 - In some cases, the local model built by LIME may fail to approximate the behaviour of the original model. It is good practice to check for such inconsistencies before trusting LIME explanations.
 
