@@ -1,18 +1,17 @@
-# [Notebook] Explaining Models with LIME and SHAP
+# Explaining Models with LIME and SHAP
 
 > This repository provides a [notebook](explainability.ipynb) with examples in explaining 6 models (Naive Bayes, Logistic Regression, Decision Tree, Random Forest, Gradient Boosted Tree, Multilayer Perceptron) using LIME and SHAP.
 
 ![lime results](docs/images/limeshap.png)
 
 At [Cloudera Fast Forward](https://www.cloudera.com/products/fast-forward-labs-research.html), we see model interpretability as an important step in the data science workflow. Being able to explain how a model works serves many purposes, including building trust in the model's output, satisfying regulatory requirements, model  debugging, and verifying model safety, amongst other things. We have written a research report (access it free [here](https://ff06-2020.fastforwardlabs.com/)) that discusses this topic in detail.
-In this article, we revisit two industry standard algorithms for interpretability - LIME and SHAP. We discuss how these two algorithms work, and show some code examples of how to implement them in python. At the end of this [notebook](explainability.ipynb), you should be familiar with:
+In this article, we revisit two industry standard algorithms for interpretability - LIME and SHAP. We discuss how these two algorithms work, and show some code examples of how to implement them in Python. At the end of this [notebook](explainability.ipynb), you should be familiar with:
 
 - An overview of model interpretability
 - Interpreting white box models, such as Linear/Logistic Regression (using model coefficients) and Tree models (using feature importance scores)
-- Interpreting black box models with LIME and SHAP (KernelExplainer, TreeExplainer) and how to implement this in python
+- Interpreting black box models with LIME and SHAP (KernelExplainer, TreeExplainer) and how to implement this in Python
 - Good practices for "debugging" LIME and SHAP explanations
 - Limitations of LIME/SHAP (a.k.a., when to choose LIME over SHAP)
-
 
 ---
 
@@ -53,9 +52,8 @@ Some additional limitations of both methods are mentioned below:
 
 There are three ways to launch this notebook on CML:
 
-1. **From Prototype Catalog** - Navigate to the Prototype Catalog in a CML workspace, select the "Analyzing News Headlines with SpaCy" tile, click "Launch as Project", click "Configure Project"
-2. **As ML Prototype** - In a CML workspace, click "New Project", add a Project Name, select "ML Prototype" as the Initial Setup option, copy in the [repo URL](https://github.com/cloudera/CML_AMP_SpaCy_Entity_Extraction), click "Create Project", click "Configure Project"
-3. **Manual Setup** - In a CML workspace, click "New Project", add a Project Name, select "Git" as the Initial Setup option, copy in the [repo URL](https://github.com/cloudera/CML_AMP_SpaCy_Entity_Extraction), click "Create Project".
+1. **From Prototype Catalog** - Navigate to the Prototype Catalog in a CML workspace, select the "Explaining Models with LIME and SHAP" tile, click "Launch as Project", click "Configure Project"
+2. **As ML Prototype** - In a CML workspace, click "New Project", add a Project Name, select "ML Prototype" as the Initial Setup option, copy in the [repo URL](https://github.com/cloudera/CML_AMP_Explainability_LIME_SHAP), click "Create Project", click "Configure Project"
+3. **Manual Setup** - In a CML workspace, click "New Project", add a Project Name, select "Git" as the Initial Setup option, copy in the [repo URL](https://github.com/cloudera/CML_AMP_Explainability_LIME_SHAP), click "Create Project".
 
-Once the project has been initialized in a CML workspace, run the notebook by starting a Python 3 Jupyter notebook server session. All library and model dependencies are installed inline in the notebook.
-The final cells in the notebook require a session with at least 4GB of RAM.
+Once the project has been initialized in a CML workspace, run the notebook by starting a Python 3 Jupyter notebook server session with at least 4GB of RAM. All library and model dependencies are installed inline in the notebook.
