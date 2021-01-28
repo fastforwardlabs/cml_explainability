@@ -13,7 +13,6 @@ In this article, we revisit two industry standard algorithms for interpretabilit
 - Good practices for "debugging" LIME and SHAP explanations
 - Limitations of LIME/SHAP (a.k.a., when to choose LIME over SHAP)
 
-
 ---
 
 
@@ -57,5 +56,4 @@ There are three ways to launch this notebook on CML:
 2. **As ML Prototype** - In a CML workspace, click "New Project", add a Project Name, select "ML Prototype" as the Initial Setup option, copy in the [repo URL](https://github.com/cloudera/CML_AMP_Explainability_LIME_SHAP), click "Create Project", click "Configure Project"
 3. **Manual Setup** - In a CML workspace, click "New Project", add a Project Name, select "Git" as the Initial Setup option, copy in the [repo URL](https://github.com/cloudera/CML_AMP_Explainability_LIME_SHAP), click "Create Project".
 
-Once the project has been initialized in a CML workspace, run the notebook by starting a Python 3 Jupyter notebook server session. All library and model dependencies are installed inline in the notebook.
-The final cells in the notebook require a session with at least 4GB of RAM.
+Once the project has been initialized in a CML workspace, run the notebook by starting a Python 3 Jupyter notebook server session with at least 4GB of RAM. All library and model dependencies are installed inline in the notebook.
