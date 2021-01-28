@@ -1,4 +1,4 @@
-# [Notebook] Explaining Models with LIME and SHAP
+# Explaining Models with LIME and SHAP
 
 > This repository provides a [notebook](explainability.ipynb) with examples in explaining 6 models (Naive Bayes, Logistic Regression, Decision Tree, Random Forest, Gradient Boosted Tree, Multilayer Perceptron) using LIME and SHAP.
 
